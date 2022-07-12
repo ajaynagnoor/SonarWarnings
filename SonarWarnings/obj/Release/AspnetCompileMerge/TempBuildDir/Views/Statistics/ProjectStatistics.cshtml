@@ -1,0 +1,359 @@
+﻿@{
+    ViewBag.Title = "Project Statistics";
+}
+
+<div class="row">
+    &nbsp;
+</div>
+
+<link href="~/Content/Bootstrap_v4.1.css" rel="stylesheet" />
+<link href="~/Content/1.10.20/jquery.dataTables.min.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/1.10.20/jquery.dataTables.min.js"></script>
+<link href="~/Content/dataTables.bootstrap4.css" rel="stylesheet" />
+<script src="~/Scripts/dataTables.bootstrap4.js"></script>
+<link href="~/Content/bootstrap_4.4.1.min.css" rel="stylesheet" />
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+<script src="~/Scripts/responsive/2.2.3/dataTables.responsive.min.js"></script>
+<script src="~/Scripts/fixedheader/3.1.6/dataTables.fixedHeader.min.js"></script>
+<link href="~/Content/responsive/2.2.3/responsive.dataTables.min.css" rel="stylesheet" />
+<link href="~/Content/fixedheader/3.1.6/fixedHeader.dataTables.min.css" rel="stylesheet" />
+
+<style type="text/css">
+    table.fixedHeader-floating {
+        top: -7px !important;
+    }
+
+    .unselectable {
+        background-color: #ddd !important;
+        cursor: not-allowed !important;
+    }
+
+    .dataTables_wrapper .dataTables_paginate .paginate_button {
+        padding: 0px !important;
+    }
+
+    .form-control {
+        font-size: inherit;
+        height: calc(3.5rem + 1px);
+    }
+
+    button#export {
+        margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    div#loader {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    input, select, textarea {
+        max-width: initial;
+    }
+
+    .form-control {
+        font-size: inherit;
+        height: calc(3.5rem + 1px);
+    }
+
+    .navbar-collapse.collapse {
+        color: #333333;
+    }
+
+    ul.nav.navbar-nav {
+        display: block;
+    }
+
+    .navbar > .container, .navbar > .container-fluid {
+        display: block;
+    }
+
+    body {
+        padding-top: 0px;
+        font-size: 14px;
+    }
+
+    .navbar.navbar-inverse.navbar-fixed-top {
+        padding: 0px;
+        color: #333333;
+    }
+
+    td {
+        font-size: 10pt !important;
+    }
+
+    tr {
+        font-size: 10pt !important;
+    }
+
+    /*div#SonarWarningsGrid_filter {
+        padding-right: 17px;
+    }*/
+
+    .dataTables_scrollHead {
+        padding-left: 17px;
+    }
+
+    /*.pagination {
+        padding-right: 17px;
+    }*/
+
+    .dataTables_scrollBody {
+        padding-left: 17px;
+    }
+
+    /*div#SonarWarningsGrid_info {
+        padding-left: 17px;
+    }*/
+
+    /*div#SonarWarningsGrid_length {
+        padding-left: 17px;
+    }*/
+
+    div#divAssignedProjects {
+        padding-left: 30px;
+    }
+
+    div#footer {
+        padding-left: 17px;
+    }
+
+    .icons-excel {
+        background: url(../Images/export-report.png) no-repeat;
+        border: none;
+        padding: 0px 0px 8px 30px;
+        height: 25px;
+        vertical-align: middle;
+    }
+
+    table.fixedHeader-floating {
+        position: fixed !important;
+        background-color: white
+    }
+
+        table.fixedHeader-floating.no-footer {
+            border-bottom-width: 0
+        }
+
+    table.fixedHeader-locked {
+        position: absolute !important;
+        background-color: white
+    }
+
+    .spinner, .spinner:after, .spinner:before {
+        display: inline-block;
+        box-sizing: border-box;
+        border-color: #4b9fd5 transparent transparent;
+        animation-duration: 1.2s;
+    }
+
+    .spinner, .spinner-placeholder {
+        position: relative;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+    }
+
+    .spinner {
+        border: 2px solid #4b9fd5;
+        border-radius: 50%;
+        animation: spin .75s linear infinite;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    td.details-control {
+        background: url('../../Images/details_open.png') no-repeat center center;
+        cursor: pointer;
+    }
+
+    tr.shown td.details-control {
+        background: url('../../Images/details_close.png') no-repeat center center;
+    }
+
+    table.dataTable thead .sorting_asc {
+        background-image: url(../../Images/sort_asc.png);
+    }
+
+    table.dataTable thead .sorting {
+        background-image: url(../../Images/sort_both.png);
+    }
+
+    table.dataTable thead .sorting_desc {
+        background-image: url(../../Images/sort_desc.png);
+    }
+
+    table#details {
+        text-align: center;
+    }
+</style>
+
+<script type="text/javascript">
+    var key = '';
+    var exportBtn = $('<button id="export" type="submit" onclick="ExportExcel()" class="btn btn-primary">Export</button>');
+
+    $(document).ready(function () {
+        $(".container.body-content").height($(document).height());
+        $('#SonarStatistisGrid').hide();
+        $('#loader').show();
+
+        $.ajax({
+            url: "/Statistics/GetProjectStatistics",
+            type: "GET",
+            contentType: "application/json; charset=utf-8",
+            datatype: JSON,
+            success: function (result) {
+                $('#loader').hide();
+                BindGrid(result);
+                $('#SonarStatistisGrid').show();
+                $('#SonarStatistisGrid_filter').append(exportBtn);
+            },
+            error: function (data) { }
+        });
+    });
+
+    function BindGrid(result) {
+        var table = $('#SonarStatistisGrid').DataTable({
+            data: result,
+            "columns": [
+                {
+                    "className": 'details-control',
+                    "orderable": false,
+                    "data": null,
+                    "defaultContent": ''
+                },
+                { "data": "Key" },
+                { "data": "Name" },
+                { "data": "LastAnalysisDate" },
+                { "data": "QualityGateStatus" }
+            ],
+            "order": [[1, 'asc']],
+            responsive: true,
+            "drawCallback": function () {
+                $("#SonarStatistisGrid > tbody > tr").each(function () {
+                    if ($(this).find("td").eq(3).html() == '') {
+                        $(this).find("td").eq(0).removeClass('details-control');
+                    }
+                });
+                $('.container.body-content').height('auto');
+            }
+        });
+        new $.fn.dataTable.FixedHeader(table);
+
+        // Add event listener for opening and closing details
+        $('#SonarStatistisGrid tbody').on('click', 'td.details-control', function () {
+            var tr = $(this).closest('tr');
+            var row = table.row(tr);
+
+            if (row.child.isShown()) {
+                // This row is already open - close it
+                row.child.hide();
+                tr.removeClass('shown');
+            }
+            else {
+                var rowdata = '<div class="spinner-border text-primary"></div>';
+                row.child(rowdata).show();
+                tr.addClass('shown');
+                $("tr td:nth-child(1)").addClass('unselectable');
+
+                $.ajax({
+                    url: "/Statistics/SonarWarningsCountsSinceLeakPeriod",
+                    type: "GET",
+                    contentType: "application/json; charset=utf-8",
+                    data: { projectKey: row.data().Key },
+                    datatype: JSON,
+                    success: function (result) {
+                        $("tr td:nth-child(1)").removeClass('unselectable');
+
+                        var totalBugs = Number(result[5].Item2) + Number(result[6].Item2) + Number(result[7].Item2) + Number(result[8].Item2) + Number(result[9].Item2);
+                        var totalVulnerabilities = Number(result[10].Item2) + Number(result[11].Item2) + Number(result[12].Item2) + Number(result[13].Item2) + Number(result[14].Item2);
+                        var totalCodeSmells = Number(result[0].Item2) + Number(result[1].Item2) + Number(result[2].Item2) + Number(result[3].Item2) + Number(result[4].Item2);
+
+                        rowdata = '<table id="details" class="display table table-striped table-bordered" style="width:100%"><tr><td colspan="5">Bug (' + totalBugs + ')</td><td colspan="5">Vulnerability (' + totalVulnerabilities + ')</td><td colspan="5">Code Smell (' + totalCodeSmells + ')</td><td colspan="5">Security Hotspot</td></tr>'
+                            + '<tr><td>Blocker</td><td>Critical</td><td>Major</td><td>Minor</td><td>Info</td><td>Blocker</td><td>Critical</td><td>Major</td><td>Minor</td><td>Info</td><td>Blocker</td><td>Critical</td><td>Major</td><td>Minor</td><td>Info</td><td cospan="5">New Security Hotspots</td></tr>'
+                            + '<tr><td>' + result[5].Item2 + '</td><td>' + result[6].Item2 + '</td><td>' + result[7].Item2 + '</td><td>' + result[8].Item2 + '</td><td>' + result[9].Item2 + '</td><td>' + result[10].Item2 + '</td><td>' + result[11].Item2 + '</td><td>' + result[12].Item2 + '</td><td>' + result[13].Item2 + '</td><td>' + result[14].Item2 + '</td><td>' + result[0].Item2 + '</td><td>' + result[1].Item2 + '</td><td>' + result[2].Item2 + '</td><td>' + result[3].Item2 + '</td><td>' + result[4].Item2 + '</td><td colspan="5">' + result[15].Item2 + '</td></tr>'
+                            + '</table>';
+                        row.child(rowdata).show();
+                        console.log(result);
+                    },
+                    error: function (data) { $('#loader').hide(); }
+                });
+            }
+        });
+    }
+
+    function ExportExcel() {
+        $("#export").attr('disabled', true);
+        $('#loader').show();
+        $.ajax({
+            type: "GET",
+            contentType: "application/json; charset=utf-8",
+            url: '/Home/ExportStatistis',
+            success: function (response) {
+                $('#loader').hide();
+                $("#export").attr('disabled', false);
+                var blob = new Blob([response], { type: 'application/ms-excel' });
+                var downloadUrl = URL.createObjectURL(blob);
+                var a = document.createElement("a");
+                a.href = downloadUrl;
+                a.download = "ProjectStatistics.xls";
+                document.body.appendChild(a);
+                a.click();
+            }
+        });
+        return false;
+    }
+</script>
+
+<div class="row">
+    <div class="col-md-5">
+    </div>
+    <div class="col-md-2">
+        <div id="loader" class="spinner-border text-primary"></div>
+    </div>
+    <div class="col-md-5">
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table id="SonarStatistisGrid" class="display table table-striped table-bordered nowrap" style="width:100%">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Project Key</th>
+                    <th>Project Name</th>
+                    <th>Last Analysis Date</th>
+                    <th>Quality Gate Status</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>

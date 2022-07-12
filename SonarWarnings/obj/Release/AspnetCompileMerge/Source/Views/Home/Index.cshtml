@@ -1,0 +1,270 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".container.body-content").height($(document).height());
+    });
+</script>
+<style type="text/css">
+    body {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+
+    .about-page-intro > h1 {
+        line-height: 40px;
+        font-size: 26px;
+        font-weight: 400;
+    }
+
+    .about-page-intro > .button {
+        height: 32px;
+        line-height: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 3px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .button:active {
+        box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    }
+
+    .button.button-active, .button:hover {
+        background: #236a97;
+        color: #fff;
+    }
+
+    .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        height: 24px;
+        line-height: 22px;
+        padding: 0 12px;
+        border: 1px solid #236a97;
+        border-radius: 2px;
+        box-sizing: border-box;
+        background: transparent;
+        color: #236a97;
+        font-weight: 600;
+        font-size: 12px;
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        transition: border-color .2s ease,box-shadow .2s ease;
+    }
+
+    .big-spacer-right {
+        margin-right: 16px !important;
+    }
+
+    .about-page-intro {
+        padding-right: 65px;
+        /*border-right: 1px solid #e6e6e6;*/
+    }
+
+    a.button {
+        text-decoration: none;
+    }
+
+    .about-page-entry {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+        padding: 65px 0;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .about-page-issue-types {
+        text-align: left;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .about-page-projects {
+        margin-left: 65px;
+        line-height: 1.4;
+        font-size: 16px;
+        text-align: center;
+        min-width: 128px;
+    }
+
+    .about-page-instance {
+        display: flex;
+        align-items: center;
+    }
+
+    .about-page {
+        font-size: 14px;
+    }
+
+        .about-page .boxed-group h3 {
+            font-weight: 400;
+            font-size: 16px;
+            padding-bottom: 12px;
+        }
+
+    .flex-columns {
+        margin-left: 30px;
+        padding-left: 30px;
+        display: flex;
+    }
+
+    svg {
+        margin-top: 2px;
+    }
+
+    .about-page .boxed-group-inner {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 25px;
+    }
+
+    .boxed-group-inner {
+        padding: 16px 20px;
+    }
+
+    .flex-column-third {
+        width: 33.33333%;
+    }
+
+    .pull-left {
+        float: left !important;
+    }
+
+    .little-spacer-right {
+        margin-right: 4px !important;
+    }
+
+    .about-page-text {
+        line-height: 1.4;
+    }
+
+    .overflow-hidden {
+        overflow: hidden !important;
+    }
+
+    .about-quality-model .flex-column + .flex-column {
+        margin-left: 30px;
+        padding-left: 30px;
+        border-left: 1px solid #e6e6e6;
+    }
+
+    .about-page .boxed-group {
+        border: none;
+    }
+
+    .boxed-group {
+        margin-bottom: 20px;
+        /*border: 1px solid #e6e6e6;
+        border-radius: 2px;*/
+        background-color: #fff;
+    }
+
+    .about-page .boxed-group > h2 {
+        padding-top: 25px;
+    }
+
+    .about-page .boxed-group h2 {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 18px;
+    }
+
+    .boxed-group > h2 {
+        line-height: 24px;
+        padding: 16px 20px 0;
+    }
+</style>
+
+
+<div class="boxed-group about-quality-model">
+    <h2>Quality Model</h2>
+    <div class="boxed-group-inner clearfix">
+        <div class="flex-columns">
+            <div class="flex-column flex-column-third">
+                <h3>Dashboard</h3>
+                <div class="pull-left little-spacer-right">
+                    <img src="~/Images/dashboard.png" />
+                </div>
+                <p class="about-page-text overflow-hidden">Dashboard summarizes the four types of SonarQube warnings for each project. The count provided for each type of each project is the baseline for that project.</p>
+            </div>
+            <div class="flex-column flex-column-third">
+                <h3>Warnings</h3>
+                <div class="pull-left little-spacer-right">
+                    <img src="~/Images/warning.png" />
+                </div>
+                <p class="about-page-text overflow-hidden">Warnings are displayed and exported on the basis of type and severity.</p>
+            </div>
+            <div class="flex-column flex-column-third">
+                <h3>Statistics</h3>
+                <div class="pull-left little-spacer-right">
+                    <img src="~/Images/statistics.png" />
+                </div>
+                <p class="about-page-text overflow-hidden">For each project important attributes viz. project key, project name, last analysis date, quality gate status along with the categorization of warnings on their type and severity from the last analysis date is shown.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="boxed-group about-quality-model">
+    <h2>Metric Definitions</h2>
+    <div class="boxed-group-inner clearfix">
+        <div class="flex-columns">
+            <div class="flex-column flex-column-third">
+                <h3>Reliability</h3>
+                <p class="about-page-text overflow-hidden">
+                    <ul>
+                        <li>A = 0 Bugs</li>
+                        <li>B = at least 1 Minor Bug</li>
+                        <li>C = at least 1 Major Bug</li>
+                        <li>D = at least 1 Critical Bug</li>
+                        <li>E = at least 1 Blocker Bug</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="flex-column flex-column-third">
+                <h3>Security</h3>
+                <p class="about-page-text overflow-hidden">
+                    <ul>
+                        <li>A = 0 Vulnerabilities</li>
+                        <li>B = at least 1 Minor Vulnerability</li>
+                        <li>C = at least 1 Major Vulnerability</li>
+                        <li>D = at least 1 Critical Vulnerability</li>
+                        <li>E = at least 1 Blocker Vulnerability</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="flex-column flex-column-third">
+                <h3>Maintainability</h3>
+
+                <p class="about-page-text overflow-hidden">
+                    Rating given to your project related to the value of your Technical Debt Ratio. <br />The default Maintainability Rating grid is:<br />
+                    <ul>
+                        <li>A = 0-0.05</li>
+                        <li>B = 0.06-0.1</li>
+                        <li>C = 0.11-0.20</li>
+                        <li>D = 0.21-0.5</li>
+                        <li>E = 0.51-1</li>
+                    </ul>
+                    The Maintainability Rating scale can be alternately stated by saying that if the outstanding remediation cost is: <br />
+                    <ul>
+                        <li>A = <=5% of the time that has already gone into the application</li>
+                        <li>B = between 6 to 10%</li>
+                        <li>C = 11 to 20%</li>
+                        <li>D = 21 to 50%</li>
+                        <li>E = anything over 50%</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

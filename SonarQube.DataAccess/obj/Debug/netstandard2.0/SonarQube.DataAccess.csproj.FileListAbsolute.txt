@@ -1,0 +1,15 @@
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\bin\Debug\netstandard2.0\SonarQube.DataAccess.deps.json
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\bin\Debug\netstandard2.0\SonarQube.DataAccess.dll
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\obj\Debug\netstandard2.0\SonarQube.DataAccess.AssemblyInfoInputs.cache
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\obj\Debug\netstandard2.0\SonarQube.DataAccess.AssemblyInfo.cs
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\bin\Debug\netstandard2.0\System.Configuration.dll
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\bin\Debug\netstandard2.0\System.Security.dll
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\bin\Debug\netstandard2.0\System.Configuration.xml
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\bin\Debug\netstandard2.0\System.Security.xml
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\obj\Debug\netstandard2.0\SonarQube.DataAccess.csproj.CopyComplete
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\obj\Debug\netstandard2.0\SonarQube.DataAccess.csproj.CoreCompileInputs.cache
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\bin\Debug\netstandard2.0\SonarQube.DataAccess.pdb
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\obj\Debug\netstandard2.0\SonarQube.DataAccess.dll
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\obj\Debug\netstandard2.0\SonarQube.DataAccess.pdb
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\obj\Debug\netstandard2.0\SonarQube.DataAccess.csproj.AssemblyReference.cache
+D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\obj\Debug\netstandard2.0\SonarQube.DataAccess.GeneratedMSBuildEditorConfig.editorconfig

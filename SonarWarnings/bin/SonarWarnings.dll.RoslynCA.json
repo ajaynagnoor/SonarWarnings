@@ -1,0 +1,3625 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "3.7.0.0",
+        "fileVersion": "3.7.0-6.20459.4 (7ee7c540)",
+        "semanticVersion": "3.7.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/App_Start/BundleConfig.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/App_Start/FilterConfig.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/App_Start/RouteConfig.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'SonarQubeAuthentication.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 1,
+                  "endLine": 89,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'ConfigReader.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 1,
+                  "endLine": 123,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/ActivityController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'ActivityController.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/ActivityController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 1,
+                  "endLine": 34,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S103",
+          "level": "warning",
+          "message": "Split this 238 characters long line (which is greater than 200 authorized).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/ActivityController.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 1,
+                  "endLine": 25,
+                  "endColumn": 239
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S103",
+          "level": "warning",
+          "message": "Split this 208 characters long line (which is greater than 200 authorized).",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/ActivityController.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 1,
+                  "endLine": 26,
+                  "endColumn": 209
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/CommonController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'CommonController.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/CommonController.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 1,
+                  "endLine": 35,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/DashboardController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'DashboardController.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/DashboardController.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 1,
+                  "endLine": 43,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/HomeController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/LoginController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'LoginController.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/LoginController.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 1,
+                  "endLine": 42,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/QualityProfilesController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'QualityProfilesController.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/QualityProfilesController.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 1,
+                  "endLine": 47,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/StatisticsController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'StatisticsController.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/StatisticsController.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 1,
+                  "endLine": 46,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/WarningsController.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'WarningsController.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/WarningsController.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 1,
+                  "endLine": 37,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/CustomFilter/AuthorizeUser.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'AuthorizeUser.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/CustomFilter/AuthorizeUser.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 1,
+                  "endLine": 33,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Global.asax.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Activity.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'Activity.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Activity.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1,
+                  "endLine": 9,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Conditions.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'Conditions.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Conditions.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 1,
+                  "endLine": 12,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Error.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'Error.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Error.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 1,
+                  "endLine": 16,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Facets.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'Facets.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Facets.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 1,
+                  "endLine": 8,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Project.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'Project.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Project.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 1,
+                  "endLine": 9,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/QualityProfileRules.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'QualityProfileRules.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/QualityProfileRules.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 1,
+                  "endLine": 11,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Statistics.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'Statistics.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Statistics.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 1,
+                  "endLine": 24,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/ProjectStatus.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'ProjectStatus.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/ProjectStatus.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 1,
+                  "endLine": 12,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/SonarWarning.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'SonarWarning.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/SonarWarning.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 1,
+                  "endLine": 17,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Properties/AssemblyInfo.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S1309",
+          "level": "warning",
+          "message": "Do not suppress issues.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Properties/AssemblyInfo.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 1,
+                  "endLine": 2,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/FavouriteProjectsReader.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'FavouriteProjectsReader.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/FavouriteProjectsReader.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 1,
+                  "endLine": 32,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectAnalysis.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'ProjectAnalysis.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectAnalysis.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 1,
+                  "endLine": 68,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectSummary.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'ProjectSummary.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectSummary.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 1,
+                  "endLine": 49,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/QualityProfileReader.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'QualityProfileReader.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/QualityProfileReader.cs",
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 1,
+                  "endLine": 68,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S113",
+          "level": "warning",
+          "message": "Add a new line at the end of the file 'WarningsProcessor.cs'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 183,
+                  "startColumn": 1,
+                  "endLine": 183,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1128",
+          "level": "warning",
+          "message": "Remove this unnecessary 'using'.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Properties/AssemblyInfo.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 1,
+                  "endLine": 3,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4049",
+          "level": "warning",
+          "message": "Consider making method 'GetProjectStatistics' a property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/StatisticsController.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 29,
+                  "endLine": 18,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Username' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/QualityProfilesController.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 56,
+                  "endLine": 18,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/QualityProfilesController.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 56,
+                  "endLine": 26,
+                  "endColumn": 66
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/QualityProfilesController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 56,
+                  "endLine": 34,
+                  "endColumn": 66
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/QualityProfilesController.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 56,
+                  "endLine": 42,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Password' 4 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/QualityProfilesController.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 56,
+                  "endLine": 19,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/QualityProfilesController.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 56,
+                  "endLine": 27,
+                  "endColumn": 66
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/QualityProfilesController.cs",
+                "region": {
+                  "startLine": 35,
+                  "startColumn": 56,
+                  "endLine": 35,
+                  "endColumn": 66
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/QualityProfilesController.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 56,
+                  "endLine": 43,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4049",
+          "level": "warning",
+          "message": "Consider making method 'GetLanguages' a property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/QualityProfilesController.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 29,
+                  "endLine": 40,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'IssuesAPI' to match pascal case naming rules, consider using 'IssuesApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 30,
+                  "endLine": 8,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'AllUsersAPI' to match pascal case naming rules, consider using 'AllUsersApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 30,
+                  "endLine": 16,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'ProjectsAPI' to match pascal case naming rules, consider using 'ProjectsApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 30,
+                  "endLine": 24,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'ProjectsAnalysisAPI' to match pascal case naming rules, consider using 'ProjectsAnalysisApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 30,
+                  "endLine": 32,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'ProjectStatisticsAPI' to match pascal case naming rules, consider using 'ProjectStatisticsApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 30,
+                  "endLine": 40,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'FacetsAPI' to match pascal case naming rules, consider using 'FacetsApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 30,
+                  "endLine": 48,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'RulesAPI' to match pascal case naming rules, consider using 'RulesApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 30,
+                  "endLine": 72,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'QualityProfilesAPI' to match pascal case naming rules, consider using 'QualityProfilesApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 30,
+                  "endLine": 80,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'ActivityAPI' to match pascal case naming rules, consider using 'ActivityApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 30,
+                  "endLine": 87,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'ComponentAPI' to match pascal case naming rules, consider using 'ComponentApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 30,
+                  "endLine": 94,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'LanguageAPI' to match pascal case naming rules, consider using 'LanguageApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 30,
+                  "endLine": 101,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'MetricsAPI' to match pascal case naming rules, consider using 'MetricsApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 30,
+                  "endLine": 108,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S100",
+          "level": "warning",
+          "message": "Rename property 'ComponentInfoAPI' to match pascal case naming rules, consider using 'ComponentInfoApi'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 30,
+                  "endLine": 115,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/FavouriteProjectsReader.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 18,
+                  "endLine": 9,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3956",
+          "level": "warning",
+          "message": "Refactor this property to use a generic collection designed for inheritance.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/ProjectStatus.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 16,
+                  "endLine": 9,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4004",
+          "level": "warning",
+          "message": "Make the 'Ratings' property read-only by removing the property setter or making it private.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/ProjectStatus.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 33,
+                  "endLine": 9,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3956",
+          "level": "warning",
+          "message": "Refactor this property to use a generic collection designed for inheritance.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/ProjectStatus.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 16,
+                  "endLine": 10,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4004",
+          "level": "warning",
+          "message": "Make the 'Facets' property read-only by removing the property setter or making it private.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/ProjectStatus.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 29,
+                  "endLine": 10,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3376",
+          "level": "warning",
+          "message": "Make this class name end with 'Attribute'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/CustomFilter/AuthorizeUser.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 18,
+                  "endLine": 10,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4060",
+          "level": "warning",
+          "message": "Seal this attribute or make it abstract.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/CustomFilter/AuthorizeUser.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 18,
+                  "endLine": 10,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3993",
+          "level": "warning",
+          "message": "Specify AttributeUsage on 'AuthorizeUser' to improve readability, even though it inherits it from its base type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/CustomFilter/AuthorizeUser.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 18,
+                  "endLine": 10,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1144",
+          "level": "warning",
+          "message": "Remove the unused private method 'GetLastAnalysisDate'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectAnalysis.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 9,
+                  "endLine": 66,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1144",
+          "level": "warning",
+          "message": "Remove the unused private method 'ReadActivity'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 106,
+                  "startColumn": 9,
+                  "endLine": 121,
+                  "endColumn": 10
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3900",
+          "level": "warning",
+          "message": "Refactor this method to add validation of parameter 'filters' before using it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/App_Start/FilterConfig.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 13,
+                  "endLine": 9,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 24,
+                  "endLine": 20,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 24,
+                  "endLine": 28,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 24,
+                  "endLine": 36,
+                  "endColumn": 97
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/ConfigReader/ConfigReader.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 24,
+                  "endLine": 44,
+                  "endColumn": 99
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3900",
+          "level": "warning",
+          "message": "Refactor this method to add validation of parameter 'httpContext' before using it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/CustomFilter/AuthorizeUser.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 17,
+                  "endLine": 14,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3900",
+          "level": "warning",
+          "message": "Refactor this method to add validation of parameter 'bundles' before using it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/App_Start/BundleConfig.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 13,
+                  "endLine": 10,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4564",
+          "level": "warning",
+          "message": "Enable input validation for this HttpPost method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/LoginController.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 10,
+                  "endLine": 13,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4058",
+          "level": "warning",
+          "message": "Change this call to 'newcodewarnings.Equals' to an overload that accepts a 'StringComparison' as a parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/WarningsController.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 20,
+                  "endLine": 34,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2325",
+          "level": "warning",
+          "message": "Make 'GetApiToCall' a static method.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/WarningsController.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 24,
+                  "endLine": 32,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Controllers/DashboardController.cs",
+                "region": {
+                  "startLine": 38,
+                  "startColumn": 24,
+                  "endLine": 38,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Models/Statistics.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 71,
+                  "endLine": 15,
+                  "endColumn": 107
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectSummary.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 78,
+                  "endLine": 23,
+                  "endColumn": 101
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2221",
+          "level": "warning",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectSummary.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 20,
+                  "endLine": 26,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectAnalysis.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 64,
+                  "endLine": 40,
+                  "endColumn": 179
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectSummary.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 46,
+                  "endLine": 43,
+                  "endColumn": 108
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4058",
+          "level": "warning",
+          "message": "Change this call to 'Convert.ToString(((JValue)((JProperty)tokens[0]).Value).Value).Equals' to an overload that accepts a 'StringComparison' as a parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectSummary.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 46,
+                  "endLine": 43,
+                  "endColumn": 124
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S109",
+          "level": "warning",
+          "message": "Assign this magic number '8' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectAnalysis.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 123,
+                  "endLine": 40,
+                  "endColumn": 124
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectAnalysis.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 74,
+                  "endLine": 23,
+                  "endColumn": 97
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectAnalysis.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 29,
+                  "endLine": 26,
+                  "endColumn": 91
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3994",
+          "level": "warning",
+          "message": "Either change this parameter type to 'System.Uri' or provide an overload which takes a 'System.Uri' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/QualityProfileReader.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 63,
+                  "endLine": 13,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3358",
+          "level": "warning",
+          "message": "Extract this nested ternary operation into an independent statement.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/ProjectAnalysis.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 57,
+                  "endLine": 30,
+                  "endColumn": 101
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/QualityProfileReader.cs",
+                "region": {
+                  "startLine": 49,
+                  "startColumn": 92,
+                  "endLine": 49,
+                  "endColumn": 115
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/QualityProfileReader.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 25,
+                  "endLine": 57,
+                  "endColumn": 146
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2221",
+          "level": "warning",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/QualityProfileReader.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 13,
+                  "endLine": 28,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3900",
+          "level": "warning",
+          "message": "Refactor this method to add validation of parameter 'filterContext' before using it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/CustomFilter/AuthorizeUser.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 13,
+                  "endLine": 25,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3994",
+          "level": "warning",
+          "message": "Either change this parameter type to 'System.Uri' or provide an overload which takes a 'System.Uri' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 53,
+                  "endLine": 12,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4005",
+          "level": "warning",
+          "message": "Call the overload that takes a 'System.Uri' as an argument instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 58,
+                  "endLine": 18,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2221",
+          "level": "warning",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 20,
+                  "endLine": 31,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3994",
+          "level": "warning",
+          "message": "Either change this parameter type to 'System.Uri' or provide an overload which takes a 'System.Uri' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 111,
+                  "endLine": 17,
+                  "endColumn": 117
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3994",
+          "level": "warning",
+          "message": "Either change this parameter type to 'System.Uri' or provide an overload which takes a 'System.Uri' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 53,
+                  "endLine": 40,
+                  "endColumn": 59
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4005",
+          "level": "warning",
+          "message": "Call the overload that takes a 'System.Uri' as an argument instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 58,
+                  "endLine": 46,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3994",
+          "level": "warning",
+          "message": "Either change this parameter type to 'System.Uri' or provide an overload which takes a 'System.Uri' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 56,
+                  "endLine": 67,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4005",
+          "level": "warning",
+          "message": "Call the overload that takes a 'System.Uri' as an argument instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 58,
+                  "endLine": 74,
+                  "endColumn": 80
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2221",
+          "level": "warning",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 20,
+                  "endLine": 80,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2221",
+          "level": "warning",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 20,
+                  "endLine": 59,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3220",
+          "level": "warning",
+          "message": "Review this call, which partially matches an overload without 'params'. The partial match is 'string string.Concat(object arg0)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/Authentication/SonarQubeAuthentication.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 112,
+                  "endLine": 48,
+                  "endColumn": 149
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3994",
+          "level": "warning",
+          "message": "Either change this parameter type to 'System.Uri' or provide an overload which takes a 'System.Uri' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/FavouriteProjectsReader.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 51,
+                  "endLine": 11,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 52,
+                  "endLine": 42,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4058",
+          "level": "warning",
+          "message": "Change this call to 'severity.Equals' to an overload that accepts a 'StringComparison' as a parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 23,
+                  "endLine": 31,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/FavouriteProjectsReader.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 66,
+                  "endLine": 23,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/FavouriteProjectsReader.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 33,
+                  "endLine": 24,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2221",
+          "level": "warning",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 47,
+                  "startColumn": 20,
+                  "endLine": 47,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 78,
+                  "endLine": 108,
+                  "endColumn": 141
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3994",
+          "level": "warning",
+          "message": "Either change this parameter type to 'System.Uri' or provide an overload which takes a 'System.Uri' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 112,
+                  "endLine": 63,
+                  "endColumn": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3994",
+          "level": "warning",
+          "message": "Either change this parameter type to 'System.Uri' or provide an overload which takes a 'System.Uri' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 123,
+                  "startColumn": 88,
+                  "endLine": 123,
+                  "endColumn": 94
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 17,
+                  "endLine": 79,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 52,
+                  "endLine": 87,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4058",
+          "level": "warning",
+          "message": "Change this call to 'severity.Equals' to an overload that accepts a 'StringComparison' as a parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 23,
+                  "endLine": 76,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 74,
+                  "endLine": 159,
+                  "endColumn": 97
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2221",
+          "level": "warning",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 20,
+                  "endLine": 92,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 72,
+                  "endLine": 115,
+                  "endColumn": 95
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 25,
+                  "endLine": 167,
+                  "endColumn": 146
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4056",
+          "level": "warning",
+          "message": "Use the overload that takes a 'CultureInfo' or 'IFormatProvider' parameter.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 180,
+                  "startColumn": 20,
+                  "endLine": 180,
+                  "endColumn": 141
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1481",
+          "level": "warning",
+          "message": "Remove the unused local variable 'result'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Ajay/Sonar/SonarWarnings/SonarWarnings/SonarAnalysis/WarningsProcessor.cs",
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 17,
+                  "endLine": 118,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3990",
+          "level": "warning",
+          "message": "Mark this assembly with 'System.CLSCompliantAttribute'",
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S100": {
+          "id": "S100",
+          "shortDescription": "Methods and properties should be named in PascalCase",
+          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently. This rule checks whether or not method and property names are PascalCased. To reduce noise, two consecutive upper case characters are allowed unless they form the whole name. So, MyXMethod is compliant, but XM on its own is not.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-100",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S103": {
+          "id": "S103",
+          "shortDescription": "Lines should not be too long",
+          "fullDescription": "Having to scroll horizontally makes it harder to get a quick overview and understanding of any piece of code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-103",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1075": {
+          "id": "S1075",
+          "shortDescription": "URIs should not be hardcoded",
+          "fullDescription": "Hardcoding a URI makes it difficult to test a program: path literals are not always portable across operating systems, a given absolute path may not exist on a specific test environment, a specified Internet URL may not be available when executing the tests, production environment filesystems usually differ from the development environment, ...etc. For all those reasons, a URI should never be hardcoded. Instead, it should be replaced by customizable parameter.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1075",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S109": {
+          "id": "S109",
+          "shortDescription": "Magic numbers should not be used",
+          "fullDescription": "A magic number is a number that comes out of nowhere, and is directly used in a statement. Magic numbers are often used, for instance to limit the number of iterations of a loop, to test the value of a property, etc.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-109",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S1118": {
+          "id": "S1118",
+          "shortDescription": "Utility classes should not have public constructors",
+          "fullDescription": "Utility classes, which are collections of static members, are not meant to be instantiated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1128": {
+          "id": "S1128",
+          "shortDescription": "Unused \"using\" should be removed",
+          "fullDescription": "Although unnecessary using won't change anything to the produced application, removing them:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1128",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S113": {
+          "id": "S113",
+          "shortDescription": "Files should contain an empty newline at the end",
+          "fullDescription": "Some tools work better when files end with an empty line.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-113",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1144": {
+          "id": "S1144",
+          "shortDescription": "Unused private types or members should be removed",
+          "fullDescription": "private or internal types or private members that are never executed or referenced are dead code: unnecessary, inoperative code that should be removed. Cleaning out dead code decreases the size of the maintained codebase, making it easier to understand the program and preventing bugs from being introduced.",
+          "defaultLevel": "note",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1144",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope",
+              "Unnecessary"
+            ]
+          }
+        },
+        "S1192": {
+          "id": "S1192",
+          "shortDescription": "String literals should not be duplicated",
+          "fullDescription": "Duplicated string literals make the process of refactoring error-prone, since you must be sure to update all occurrences.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1192",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S1309": {
+          "id": "S1309",
+          "shortDescription": "Track uses of in-source issue suppressions",
+          "fullDescription": "This rule allows you to track the usage of the SuppressMessage attributes and #pragma warning disable mechanism.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1309",
+          "properties": {
+            "category": "Info Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1451": {
+          "id": "S1451",
+          "shortDescription": "Track lack of copyright and license headers",
+          "fullDescription": "Each source file should start with a header stating file ownership and the license which must be used to distribute the application. ",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1451",
+          "properties": {
+            "category": "Blocker Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1481": {
+          "id": "S1481",
+          "shortDescription": "Unused local variables should be removed",
+          "fullDescription": "If a local variable is declared but not used, it is dead code and should be removed. Doing so will improve maintainability because developers will not wonder what the variable is used for.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1481",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S2221": {
+          "id": "S2221",
+          "shortDescription": "\"Exception\" should not be caught when not required by called methods",
+          "fullDescription": "Catching System.Exception seems like an efficient way to handle multiple possible exceptions. Unfortunately, it traps all exception types, including the ones that were not intended to be caught. To prevent any misunderstandings, the exception filters should be used. Alternatively each exception type should be in a separate catch block.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2221",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S2325": {
+          "id": "S2325",
+          "shortDescription": "Methods and properties that don't access instance data should be static",
+          "fullDescription": "Methods and properties that don't access instance data can be static to prevent any misunderstanding about the contract of the method. ",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2325",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3220": {
+          "id": "S3220",
+          "shortDescription": "Method calls should not resolve ambiguously to overloads with \"params\"",
+          "fullDescription": "The rules for method resolution are complex and perhaps not properly understood by all coders. The params keyword can make method declarations overlap in non-obvious ways, so that slight changes in the argument types of an invocation can resolve to different methods.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3220",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3358": {
+          "id": "S3358",
+          "shortDescription": "Ternary operators should not be nested",
+          "fullDescription": "Just because you can do something, doesn't mean you should, and that's the case with nested ternary operations. Nesting ternary operators results in the kind of code that may seem clear as day when you write it, but six months later will leave maintainers (or worse - future you) scratching their heads and cursing.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3358",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3376": {
+          "id": "S3376",
+          "shortDescription": "Attribute, EventArgs, and Exception type names should end with the type being extended",
+          "fullDescription": "Adherence to the standard naming conventions makes your code not only more readable, but more usable. For instance, class FirstAttribute : Attribute can be used simply with First, but you must use the full name for class AttributeOne : Attribute.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3376",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3900": {
+          "id": "S3900",
+          "shortDescription": "Arguments of public methods should be validated against null",
+          "fullDescription": "A publicly accessible method can be called from anywhere, which means you should validate parameters to be within the expected constraints. In general, checking against null is recommended defensive programming.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3900",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3956": {
+          "id": "S3956",
+          "shortDescription": "\"Generic.List\" instances should not be part of public APIs",
+          "fullDescription": "System.Collections.Generic.List<T> is a generic collection that is designed for performance and not inheritance. For example, it does not contain virtual members that make it easier to change the behavior of an inherited class. That means that future attempts to expand the behavior will be spoiled because the extension points simply aren't there. Instead, one of the following generic collections should be used:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3956",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S3990": {
+          "id": "S3990",
+          "shortDescription": "Assemblies should be marked as CLS compliant",
+          "fullDescription": "Assemblies should conform with the Common Language Specification (CLS) in order to be usable across programming languages. To be compliant an assembly has to indicate it with System.CLSCompliantAttribute.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3990",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3993": {
+          "id": "S3993",
+          "shortDescription": "Custom attributes should be marked with \"System.AttributeUsageAttribute\"",
+          "fullDescription": "When defining custom attributes, System.AttributeUsageAttribute must be used to indicate where the attribute can be applied. This will determine its valid locations in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3993",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3994": {
+          "id": "S3994",
+          "shortDescription": "URI Parameters should not be strings",
+          "fullDescription": "String representations of URIs or URLs are prone to parsing and encoding errors which can lead to vulnerabilities. The System.Uri class is a safe alternative and should be preferred. At minimum, an overload of the method taking a System.Uri as a parameter should be provided in each class that contains a method with an apparent Uri passed as a string.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3994",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S4004": {
+          "id": "S4004",
+          "shortDescription": "Collection properties should be readonly",
+          "fullDescription": "A writable collection property can be replaced by a completely different collection. Making it readonly prevents that while still allowing individual members to be set. If you want to allow the replacement of the whole collection the recommended pattern is to implement a method to remove all the elements (e.g. System.Collections.List<T>.Clear) and a method to populate the collection (e.g. System.Collections.List<T>.AddRange).",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4004",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S4005": {
+          "id": "S4005",
+          "shortDescription": "\"System.Uri\" arguments should be used instead of strings",
+          "fullDescription": "String representations of URIs or URLs are prone to parsing and encoding errors which can lead to vulnerabilities. The System.Uri class is a safe alternative and should be preferred.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4005",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S4049": {
+          "id": "S4049",
+          "shortDescription": "Properties should be preferred",
+          "fullDescription": "Properties are accessed like fields which makes them easier to use.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4049",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S4056": {
+          "id": "S4056",
+          "shortDescription": "Overloads with a \"CultureInfo\" or an \"IFormatProvider\" parameter should be used",
+          "fullDescription": "When a System.Globalization.CultureInfo or IFormatProvider object is not supplied, the default value that is supplied by the overloaded member might not have the effect that you want in all locales.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4056",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S4058": {
+          "id": "S4058",
+          "shortDescription": "Overloads with a \"StringComparison\" parameter should be used",
+          "fullDescription": "Many string operations, the Compare and Equals methods in particular, provide an overload that accepts a StringComparison enumeration value as a parameter. Calling these overloads and explicitly providing this parameter makes your code clearer and easier to maintain.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4058",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S4060": {
+          "id": "S4060",
+          "shortDescription": "Non-abstract attributes should be sealed",
+          "fullDescription": "The .NET framework class library provides methods for retrieving custom attributes. Sealing the attribute eliminates the search through the inheritance hierarchy, and can improve performance.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4060",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S4564": {
+          "id": "S4564",
+          "shortDescription": "ASP.NET HTTP request validation feature should not be disabled",
+          "fullDescription": "ASP.Net has a feature to validate HTTP requests to prevent potentially dangerous content to perform a cross-site scripting (XSS) attack. There is no reason to disable this mechanism even if other checks to prevent XXS attacks are in place.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4564",
+          "properties": {
+            "category": "Major Vulnerability",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

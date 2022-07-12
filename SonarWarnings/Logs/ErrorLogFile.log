@@ -1,0 +1,303 @@
+                   --------------------- Info(2020-10-23 09:26:34.0258)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Get Method called
+                   
+                   --------------------- Info(2020-10-23 09:39:22.0495)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Get Method called
+                   
+                   --------------------- Info(2020-10-23 09:46:09.4611)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Post Method called
+                   
+                   --------------------- Info(2020-10-23 09:46:13.2760)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Key - TestProject
+                   
+                   --------------------- Info(2020-10-23 09:46:13.6678)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Name - TestProject
+                   
+                   --------------------- Error(2020-10-23 09:46:22.8401)SCS-MC02-------------------- 
+                   
+                   Exception Type:System.Net.WebException
+                   Exception Message:The remote server returned an error: (400) Bad Request.
+                   Stack Trace:
+                   Additional Info:System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.GetResponseFromRequest(String url) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 115
+                   
+                   --------------------- Error(2020-10-23 09:48:00.2315)SCS-MC02-------------------- 
+                   
+                   Exception Type:Newtonsoft.Json.JsonReaderException
+                   Exception Message:Unexpected character encountered while parsing value: T. Path '', line 0, position 0.
+                   Stack Trace:
+                   Additional Info:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: T. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.GetIssuesCountSinceLeakPeriod(String response) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 99
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.GetSonarWarningsCountsSinceLeakPeriod(String url) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 90
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.ProcessCallBackResult(SonarQubeVm sonar, ActivityBL activity) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 60
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.<>c__DisplayClass2_0.<SonarProjectStatusCallBackAsync>b__0() in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 40
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.<SonarProjectStatusCallBackAsync>d__2.MoveNext() in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 38
+                   
+                   --------------------- Info(2020-10-23 09:51:32.5693)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Post Method called
+                   
+                   --------------------- Info(2020-10-23 09:51:35.3322)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Key - TestProject
+                   
+                   --------------------- Info(2020-10-23 09:51:35.8607)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Name - TestProject
+                   
+                   --------------------- Error(2020-10-23 09:51:57.4302)SCS-MC02-------------------- 
+                   
+                   Exception Type:System.Net.WebException
+                   Exception Message:The remote server returned an error: (400) Bad Request.
+                   Stack Trace:
+                   Additional Info:System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.GetResponseFromRequest(String url) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 115
+                   
+                   --------------------- Error(2020-10-23 09:52:01.9889)SCS-MC02-------------------- 
+                   
+                   Exception Type:Newtonsoft.Json.JsonReaderException
+                   Exception Message:Unexpected character encountered while parsing value: T. Path '', line 0, position 0.
+                   Stack Trace:
+                   Additional Info:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: T. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.GetIssuesCountSinceLeakPeriod(String response) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 99
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.GetSonarWarningsCountsSinceLeakPeriod(String url) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 90
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.ProcessCallBackResult(SonarQubeVm sonar, ActivityBL activity) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 60
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.<>c__DisplayClass2_0.<SonarProjectStatusCallBackAsync>b__0() in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 40
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.<SonarProjectStatusCallBackAsync>d__2.MoveNext() in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 38
+                   
+                   --------------------- Info(2020-10-23 10:05:03.1150)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Post Method called
+                   
+                   --------------------- Info(2020-10-23 10:05:07.4501)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Key - TestProject
+                   
+                   --------------------- Info(2020-10-23 10:05:07.4501)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Name - TestProject
+                   
+                   --------------------- Error(2020-10-23 10:08:48.8088)SCS-MC02-------------------- 
+                   
+                   Exception Type:System.Net.WebException
+                   Exception Message:The remote server returned an error: (400) Bad Request.
+                   Stack Trace:
+                   Additional Info:System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.GetResponseFromRequest(String url) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 115
+                   
+                   --------------------- Error(2020-10-23 10:09:06.8672)SCS-MC02-------------------- 
+                   
+                   Exception Type:Newtonsoft.Json.JsonReaderException
+                   Exception Message:Unexpected character encountered while parsing value: T. Path '', line 0, position 0.
+                   Stack Trace:
+                   Additional Info:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: T. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.GetIssuesCountSinceLeakPeriod(String response) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 99
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.GetSonarWarningsCountsSinceLeakPeriod(String url) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 90
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.ProcessCallBackResult(SonarQubeVm sonar, ActivityBL activity) in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 60
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.<>c__DisplayClass2_0.<SonarProjectStatusCallBackAsync>b__0() in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 40
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   at SonarQubeAnalysisCallBack.Controllers.SonarAnalysisController.<SonarProjectStatusCallBackAsync>d__2.MoveNext() in D:\Ajay\Sonar\SonarWarnings\SonarQubeAnalysisCallBack\Controllers\SonarAnalysisController.cs:line 38
+                   
+                   --------------------- Error(2020-11-25 12:53:06.1686)SCS-MC02-------------------- 
+                   
+                   Exception Type:System.Data.SqlClient.SqlException
+                   Exception Message:Login failed for user 'sa'.  Reason: The password of the account has expired.
+                   Stack Trace:
+                   Additional Info:System.Data.SqlClient.SqlException (0x80131904): Login failed for user 'sa'.  Reason: The password of the account has expired.
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at SonarQube.DataAccess.SqlHelper.ExecuteNonQuery(String connectionString, CommandType commandType, String commandText, SqlParameter[] commandParameters) in D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\SqlHelper.cs:line 31
+   at SonarQube.DataAccess.ActivityDA.AddStatistics(DataTable warnings, DataTable securityhotspots, DataTable metricswithvalues) in D:\Ajay\Sonar\SonarWarnings\SonarQube.DataAccess\ActivityDA.cs:line 38
+ClientConnectionId:6ed47a0a-0b4a-416b-aabd-907da55dd8dc
+Error Number:18487,State:1,Class:14
+                   
+                   --------------------- Trace(2020-12-04 13:54:39.1353)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:http://10.0.6.9:9000/api/issues/search?projectKeys=SkillSurvey-Reference&ps=500&types=BUG&resolved=false
+                   
+                   --------------------- Error(2020-12-08 12:05:41.5967)SCS-MC02-------------------- 
+                   
+                   Exception Type:System.Net.WebException
+                   Exception Message:Unable to connect to the remote server
+                   Stack Trace:
+                   Additional Info:System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.0.6.9:9000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at SonarWarnings.SonarQubeAuthentication.ValidateUser(String url, String username, String password) in D:\Ajay\Sonar\SonarWarnings\SonarWarnings\Authentication\SonarQubeAuthentication.cs:line 77
+                   
+                   --------------------- Error(2020-12-08 12:06:39.1845)SCS-MC02-------------------- 
+                   
+                   Exception Type:System.Net.WebException
+                   Exception Message:Unable to connect to the remote server
+                   Stack Trace:
+                   Additional Info:System.Net.WebException: Unable to connect to the remote server ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond 10.0.6.9:9000
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.GetResponse()
+   at SonarWarnings.SonarQubeAuthentication.ValidateUser(String url, String username, String password) in D:\Ajay\Sonar\SonarWarnings\SonarWarnings\Authentication\SonarQubeAuthentication.cs:line 77
+                   
+                   --------------------- Trace(2020-12-08 12:08:42.4780)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:http://192.168.0.38:9000/api/issues/search?projectKeys=SkillSurvey-Reference&ps=500&types=SECURITY_HOTSPOT&severities=-2&resolved=false
+                   
+                   --------------------- Error(2020-12-08 12:08:43.8683)SCS-MC02-------------------- 
+                   
+                   Exception Type:System.Net.WebException
+                   Exception Message:The remote server returned an error: (400) Bad Request.
+                   Stack Trace:
+                   Additional Info:System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at SonarWarnings.SonarQubeAuthentication.GetResponseFromRequest(String url, String username, String password) in D:\Ajay\Sonar\SonarWarnings\SonarWarnings\Authentication\SonarQubeAuthentication.cs:line 22
+                   
+                   --------------------- Error(2020-12-08 12:08:43.9192)SCS-MC02-------------------- 
+                   
+                   Exception Type:Newtonsoft.Json.JsonReaderException
+                   Exception Message:Unexpected character encountered while parsing value: T. Path '', line 0, position 0.
+                   Stack Trace:
+                   Additional Info:Newtonsoft.Json.JsonReaderException: Unexpected character encountered while parsing value: T. Path '', line 0, position 0.
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value)
+   at SonarWarnings.WarningsProcessor.GetIssuesCount(String response) in D:\Ajay\Sonar\SonarWarnings\SonarWarnings\SonarAnalysis\WarningsProcessor.cs:line 167
+   at SonarWarnings.WarningsProcessor.GetResponse(String projectName, String issueType, String severity, String url, String UserName, String Password) in D:\Ajay\Sonar\SonarWarnings\SonarWarnings\SonarAnalysis\WarningsProcessor.cs:line 36
+                   
+                   --------------------- Trace(2020-12-08 12:11:46.5040)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:http://192.168.0.38:9000/api/issues/search?projectKeys=SkillSurvey-Reference&ps=500&types=SECURITY_HOTSPOT&severities=-2&resolved=false
+                   
+                   --------------------- Error(2020-12-08 12:11:47.9492)SCS-MC02-------------------- 
+                   
+                   Exception Type:System.Net.WebException
+                   Exception Message:The remote server returned an error: (400) Bad Request.
+                   Stack Trace:
+                   Additional Info:System.Net.WebException: The remote server returned an error: (400) Bad Request.
+   at System.Net.HttpWebRequest.GetResponse()
+   at SonarWarnings.SonarQubeAuthentication.GetResponseFromRequest(String url, String username, String password) in D:\Ajay\Sonar\SonarWarnings\SonarWarnings\Authentication\SonarQubeAuthentication.cs:line 22
+                   
+                   --------------------- Trace(2020-12-08 12:14:10.1106)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:http://192.168.0.38:9000/api/issues/search?projectKeys=SkillSurvey-Reference&ps=500&types=SECURITY_HOTSPOT&resolved=false
+                   
+                   --------------------- Trace(2020-12-08 12:14:17.5494)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:http://192.168.0.38:9000/api/issues/search?projectKeys=SkillSurvey-Reference&ps=500&types=SECURITY_HOTSPOT&resolved=false
+                   
+                   --------------------- Info(2021-04-20 10:58:36.7107)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Get Method called
+                   
+                   --------------------- Info(2021-04-20 10:59:02.7333)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Get Method called
+                   
+                   --------------------- Info(2021-04-20 10:59:17.7802)SCS-MC02-------------------- 
+                   
+                   Exception Type:
+                   Exception Message:
+                   Stack Trace:
+                   Additional Info:Get Method called
+                   

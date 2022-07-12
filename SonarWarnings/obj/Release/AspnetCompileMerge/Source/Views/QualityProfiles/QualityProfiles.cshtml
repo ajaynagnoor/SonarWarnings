@@ -1,0 +1,351 @@
+﻿@{
+    ViewBag.Title = "Quality Profiles";
+}
+
+<link href="~/Content/Bootstrap_v4.1.css" rel="stylesheet" />
+<link href="~/Content/dataTables.bootstrap4.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/dataTables.bootstrap4.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<link href="~/Content/bootstrap_4.4.1.min.css" rel="stylesheet" />
+
+<style type="text/css">
+    div#loader {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    input, select, textarea {
+        max-width: initial;
+    }
+
+    .form-control {
+        font-size: inherit;
+        height: calc(3.5rem + 1px);
+    }
+
+    .navbar-collapse.collapse {
+        color: #333333;
+    }
+
+    ul.nav.navbar-nav {
+        display: block;
+    }
+
+    .navbar > .container, .navbar > .container-fluid {
+        display: block;
+    }
+
+    body {
+        padding-top: 0px;
+        font-size: 14px;
+    }
+
+    .navbar.navbar-inverse.navbar-fixed-top {
+        padding: 0px;
+        color: #333333;
+    }
+
+    td {
+        font-size: 10pt !important;
+    }
+
+    tr {
+        font-size: 10pt !important;
+    }
+
+    /*div#SonarWarningsGrid_filter {
+        padding-right: 17px;
+    }*/
+
+    .dataTables_scrollHead {
+        padding-left: 17px;
+    }
+
+    /*.pagination {
+        padding-right: 17px;
+    }*/
+
+    .dataTables_scrollBody {
+        padding-left: 17px;
+    }
+
+    /*div#SonarWarningsGrid_info {
+        padding-left: 17px;
+    }*/
+
+    /*div#SonarWarningsGrid_length {
+        padding-left: 17px;
+    }*/
+
+    div#divAssignedProjects {
+        padding-left: 30px;
+    }
+
+    div#footer {
+        padding-left: 17px;
+    }
+
+    .icons-excel {
+        background: url(../Images/export-report.png) no-repeat;
+        border: none;
+        padding: 0px 0px 8px 30px;
+        height: 25px;
+        vertical-align: middle;
+    }
+
+    table.fixedHeader-floating {
+        position: fixed !important;
+        background-color: white
+    }
+
+        table.fixedHeader-floating.no-footer {
+            border-bottom-width: 0
+        }
+
+    table.fixedHeader-locked {
+        position: absolute !important;
+        background-color: white
+    }
+
+    .spinner, .spinner:after, .spinner:before {
+        display: inline-block;
+        box-sizing: border-box;
+        border-color: #4b9fd5 transparent transparent;
+        animation-duration: 1.2s;
+    }
+
+    .spinner, .spinner-placeholder {
+        position: relative;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+    }
+
+    .spinner {
+        border: 2px solid #4b9fd5;
+        border-radius: 50%;
+        animation: spin .75s linear infinite;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    .table {
+        margin-bottom: 0.1rem;
+    }
+
+    .table-light, .table-light > td, .table-light > th {
+        background-color: #FDFEB0;
+    }
+
+    th.centeraligned, td.centeraligned {
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+
+<script type="text/javascript">
+    var Issues = {
+        BUG: "Bug",
+        VULNERABILITY: "Vulnerability",
+        CODE_SMELL: "Code Smell",
+        SECURITY_HOTSPOT: "Security Hotspot"
+    };
+
+    var Severities = {
+        BLOCKER: "Blocker",
+        MINOR: "Minor",
+        CRITICAL: "Critical",
+        INFO: "Info",
+        MAJOR: "Major"
+    };
+
+    $(document).ready(function () {
+        $(".container.body-content").height($(document).height());
+        $('#QualityProfileRulesGrid').hide();
+        $('#loader').hide();
+
+        $.ajax({
+            url: "/QualityProfiles/GetLanguages",
+            type: "GET",
+            contentType: "application/json; charset=utf-8",
+            datatype: JSON,
+            success: function (result) {
+                lang = $.parseJSON(result);
+                $(lang.languages).each(function () {
+                    $("#languages").append($("<option></option>").val(this.key).html(this.name));
+                    $('.dropdown-menu').append('<li><a href="#">"' + this.name + '"</a></li>');
+                });
+                $("#languages").prepend("<option value='-1'>Select Language</option>");
+                $('#languages option[value="-1"]').attr("selected", "selected");
+            },
+            error: function (data) { }
+        });
+    });
+
+    function BindGrid(res) {
+        $('#QualityProfileRulesGrid').DataTable({
+            data: res,
+            "columns": [
+                { "data": "Key" },
+                { "data": "Name" },
+                ////{ "data": "MdDesc" },
+                { "data": "Type" },
+                { "data": "Severity" }
+            ],
+            "bDestroy": true,
+            "drawCallback": function () {
+                $('.container.body-content').height('auto');
+            }
+        });
+    }
+
+    function Get() {
+        if ($("#languages option:selected").text() == 'Select Language') {
+            alert('Please select one of the language.');
+        }
+        else if ($("#qualityprofiles option:selected").text() == 'Select Profile') {
+            alert('Please select one of the quality profile.');
+        }
+        else {
+            $('#loader').show();
+            $.ajax({
+                url: "/QualityProfiles/QualityProfileRules",
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                data: { profileKey: $("#qualityprofiles option:selected").val(), language: $("#languages option:selected").val() },
+                datatype: "json",
+                success: function (res) {
+                    $('#loader').hide();
+                    BindGrid(res);
+                    $('#QualityProfileRulesGrid').show();
+                    $(".container.body-content").height($(document).height());
+                },
+                error: function (res) { }
+            });
+        }
+    }
+
+    function ExportExcel() {
+        if ($("#languages option:selected").text() == 'Select Language') {
+            alert('Please select one of the language.');
+        }
+        else if ($("#qualityprofiles option:selected").text() == 'Select Profile') {
+            alert('Please select one of the quality profile.');
+        }
+        else {
+            $("#export").attr('disabled', true);
+            $.ajax({
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                url: '/QualityProfiles/ExportRules',
+                data: { profileKey: $("#qualityprofiles option:selected").val(), language: $("#languages option:selected").val() },
+                success: function (response) {
+                    $("#export").attr('disabled', false);
+                    var blob = new Blob([response], { type: 'application/ms-excel' });
+                    var downloadUrl = URL.createObjectURL(blob);
+                    var a = document.createElement("a");
+                    a.href = downloadUrl;
+                    a.download = "Rules.xls";
+                    document.body.appendChild(a);
+                    a.click();
+                }
+            });
+            return false;
+        }
+    }
+
+    $(function () {
+        $("#languages").change(function () {
+            $('#loader').show();
+            $("#qualityprofiles").empty();
+            $.ajax({
+                url: "/QualityProfiles/GetQualityProfilesForSelectedLanguage",
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                data: { qplanguage: $("#languages option:selected").val() },
+                datatype: "json",
+                success: function (res) {
+                    $('#loader').hide();
+                    profiles = $.parseJSON(res);
+                    $(profiles.profiles).each(function () {
+                        $("#qualityprofiles").append($("<option></option>").val(this.key).html(this.name));
+                    });
+                    $("#qualityprofiles").prepend("<option value='-1'>Select Profile</option>");
+                    $('#qualityprofiles option[value="-1"]').attr("selected", "selected");
+                },
+                error: function (res) { }
+            });
+        });
+    });
+</script>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-light">
+        <tr>
+            <th class="centeraligned" style="width:15%">Languages</th>
+            <th class="centeraligned" style="width:15%">Quality Profiles</th>
+            <th class="centeraligned" style="width:16%">Actions</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Html.DropDownList("languages", new SelectList(Enumerable.Empty<SelectListItem>()), new { @class = "form-control" })</td>
+            <td>@Html.DropDownList("qualityprofiles", new SelectList(Enumerable.Empty<SelectListItem>()), new { @class = "form-control" })</td>
+            <td>
+                <button id="getIssues" type="submit" onclick="Get()" class="btn btn-primary">Get Issues</button>
+                <button id="export" type="submit" onclick="ExportExcel()" class="btn btn-primary">Export</button>
+                <div id="loader" class="spinner-border text-primary"></div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="row">
+    &nbsp;
+</div>
+<div class="row">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <table id="QualityProfileRulesGrid" class="table table-striped table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Key</th>
+                            <th>Name</th>
+                            @*<th>Desc</th>*@
+                            <th>Type</th>
+                            <th>Severity</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

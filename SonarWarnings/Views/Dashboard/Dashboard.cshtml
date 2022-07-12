@@ -1,0 +1,352 @@
+﻿@{
+    ViewBag.Title = "Dashboard Analysis";
+}
+
+<div class="row">
+    <div class="col-md-5">
+    </div>
+    <div class="col-md-2">
+        <div id="loader" class="spinner-border text-primary"></div>
+    </div>
+    <div class="col-md-5">
+    </div>
+</div>
+
+<div id="divProjects" class="row">
+</div>
+
+<div class="row">
+    &nbsp;
+</div>
+
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<link href="~/Content/bootstrap_4.4.1.min.css" rel="stylesheet" />
+<link href="~/Content/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" />
+<script src="~/Scripts/promise.js"></script>
+
+<style type="text/css">
+    .table {
+        margin-bottom: 0.1rem;
+    }
+
+    .table-light, .table-light > td, .table-light > th {
+        background-color: #FDFEB0;
+    }
+
+    th.centeraligned, td.centeraligned {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+        border: 1px solid #000;
+    }
+
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+        border: 1px solid #000;
+    }
+
+    div#loader {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    input, select, textarea {
+        max-width: initial;
+    }
+
+    .form-control {
+        font-size: inherit;
+        height: calc(3.5rem + 1px);
+    }
+
+    .navbar-collapse.collapse {
+        color: #333333;
+    }
+
+    ul.nav.navbar-nav {
+        display: block;
+    }
+
+    .navbar > .container, .navbar > .container-fluid {
+        display: block;
+    }
+
+    body {
+        padding-top: 0px;
+        font-size: 14px;
+    }
+
+    .navbar.navbar-inverse.navbar-fixed-top {
+        padding: 0px;
+        color: #333333;
+    }
+
+    td {
+        font-size: 10pt !important;
+    }
+
+    tr {
+        font-size: 10pt !important;
+    }
+
+    /*div#SonarWarningsGrid_filter {
+        padding-right: 17px;
+    }*/
+
+    .dataTables_scrollHead {
+        padding-left: 17px;
+    }
+
+    /*.pagination {
+        padding-right: 17px;
+    }*/
+
+    .dataTables_scrollBody {
+        padding-left: 17px;
+    }
+
+    /*div#SonarWarningsGrid_info {
+        padding-left: 17px;
+    }*/
+
+    /*div#SonarWarningsGrid_length {
+        padding-left: 17px;
+    }*/
+
+    div#divAssignedProjects {
+        padding-left: 30px;
+    }
+
+    div#footer {
+        padding-left: 17px;
+    }
+
+    .icons-excel {
+        background: url(../Images/export-report.png) no-repeat;
+        border: none;
+        padding: 0px 0px 8px 30px;
+        height: 25px;
+        vertical-align: middle;
+    }
+
+    table.fixedHeader-floating {
+        position: fixed !important;
+        background-color: white
+    }
+
+        table.fixedHeader-floating.no-footer {
+            border-bottom-width: 0
+        }
+
+    table.fixedHeader-locked {
+        position: absolute !important;
+        background-color: white
+    }
+
+    .spinner, .spinner:after, .spinner:before {
+        display: inline-block;
+        box-sizing: border-box;
+        border-color: #4b9fd5 transparent transparent;
+        animation-duration: 1.2s;
+    }
+
+    .spinner, .spinner-placeholder {
+        position: relative;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+    }
+
+    .spinner {
+        border: 2px solid #4b9fd5;
+        border-radius: 50%;
+        animation: spin .75s linear infinite;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+</style>
+
+<script type="text/javascript">
+    var Metrics = {
+        new_reliability_rating: "Reliability",
+        new_security_rating: "Security",
+        new_maintainability_rating: "Maintainability",
+        new_coverage: "Coverage",
+        new_duplicated_lines_density: "Duplications",
+        complexity: "Cyclomatic Complexity"
+    };
+
+    var Facets = {
+        BUG: "Bug",
+        CODE_SMELL: "Code Smell",
+        SECURITY_HOTSPOT: "Security Hotspot",
+        VULNERABILITY: "Vulnerability"
+    };
+
+    var Comparators = {
+        GT: "Greater Than",
+        LT: "Less Than"
+    };
+
+    var Rating = {
+        1: "A",
+        2: "B",
+        3: "C",
+        4: "D",
+        5: "E"
+    };
+
+    var ReliabilityRatingDetails = {
+        A: '0 Bugs',
+        B: 'At least 1 Minor Bug',
+        C: 'At least 1 Major Bug',
+        D: 'At least 1 Critical Bug',
+        E: 'At least 1 Blocker Bug'
+    };
+
+    var SecurityRatingDetails = {
+        A: '0 Vulnerabilities',
+        B: 'At least 1 Minor Vulnerability',
+        C: 'At least 1 Major Vulnerability',
+        D: 'At least 1 Critical Vulnerability',
+        E: 'At least 1 Blocker Vulnerability'
+    };
+
+    var MaintainabilityReatingDetails = {
+        A: '<=5% of the time already spent',
+        B: 'Between 6 to 10% of the time already spent',
+        C: '11 to 20% of the time already spent',
+        D: '21 to 50% of the time already spent',
+        E: 'Over 50% of the time already spent'
+    };
+
+    function SortByKeyAsc(array, key) {
+        return array.sort(function (a, b) {
+            var x = a[key]; var y = b[key];
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
+    }
+
+    $(document).ready(function () {
+        $(".container.body-content").height($(document).height());
+        $('#loader').show();
+        $.ajax({
+            url: "/Common/Favourites",
+            type: "GET",
+            contentType: "application/json; charset=utf-8",
+            datatype: JSON,
+            success: function (result) {
+                favorites = $.parseJSON(result);
+                total = $.parseJSON(result).paging.total;
+
+                if (total > 0) {
+                    $(SortByKeyAsc(favorites.favorites, "name")).each(function () {
+                        GetAnalysis(this.key, this.name);
+                    });
+                }
+                else {
+                    alert('Please mark at least one project as a favorite.');
+                }
+                $('#loader').hide();
+            },
+            error: function (data) { }
+        });
+    });
+
+    function GetAnalysis(key, name) {
+        var container = $('#divProjects'), table = $('<div class="col-md-12">');
+
+        $.ajaxQueue({
+            url: "/Dashboard/Analysis",
+            type: "GET",
+            contentType: "application/json; charset=utf-8",
+            data: { projectKey: key },
+            datatype: "json",
+            success: function (res) {
+                var tr = '<div class="container"><table class="table table-bordered table-striped"><thead class="table-light"><tr><th style="width:35%">Project</th><th class="centeraligned" style="width:10%">Status</th><th class="centeraligned" style="width:10%">Bug</th><th class="centeraligned" style="width:10%">Code Smell</th><th class="centeraligned" style="width:15%">Security Hotspot</th><th class="centeraligned" style="width:10%">Vulnerability</th><th class="centeraligned" style="width:10%">As On Analysis Date</th></tr></thead>'
+                    + '<tbody><tr><th scope="row" class="table-secondary">' + name + '</th><th scope="row" class="table-secondary centeraligned ' + (res.Status == "Failed" ? "table-danger" : "table-success") + '">' + res.Status + '</th>';
+
+                var issueCount = res.Facets.filter(function (item) {
+                    return item.val == 'BUG';
+                });
+                tr += res.Status != "Not Analyzed" ? '<th scope="row" class="table-secondary centeraligned">' + issueCount[0].Count + '</th>' : '<th scope="row" class="table-secondary centeraligned">NA</th>';
+
+                issueCount = res.Facets.filter(function (item) {
+                    return item.Val == 'CODE_SMELL';
+                });
+                tr += res.Status != "Not Analyzed" ? '<th scope="row" class="table-secondary centeraligned">' + issueCount[0].Count + '</th>' : '<th scope="row" class="table-secondary centeraligned">NA</th>';
+
+                issueCount = res.Facets.filter(function (item) {
+                    return item.Val == 'SECURITY_HOTSPOT';
+                });
+                tr += res.Status != "Not Analyzed" ? '<th scope="row" class="table-secondary centeraligned">' + issueCount[0].Count + '</th>' : '<th scope="row" class="table-secondary centeraligned">NA</th>';
+
+                issueCount = res.Facets.filter(function (item) {
+                    return item.Val == 'VULNERABILITY';
+                });
+                tr += res.Status != "Not Analyzed" ? '<th scope="row" class="table-secondary centeraligned">' + issueCount[0].Count + '</th>' : '<th scope="row" class="table-secondary centeraligned">NA</th>';
+                tr += '<th scope="row" class="table-secondary centeraligned">' + res.LastAnalysisDate + '</th>';
+                tr += '</tr></tbody></table></div>';
+                table.append(tr);
+
+                ////res.Status == 'Failed' &&
+                if (res.Ratings.length > 0) {
+                    tr = '<div class="container"><table class="table table-bordered table-striped table-hover"><thead><tr class="table-warning"><th style="width:25%">Metric</th><th class="centeraligned" style="width:10%">Status</th><th class="centeraligned" style="width:10%">Expected</th><th class="centeraligned" style="width:10%">Actual</th><th style="width:45%">Failure Criteria</th></tr></thead><tbody>';
+                    res.Ratings.forEach(function (entry) {
+                        tr += '<tr><th scope="row" class="table-primary">' + Metrics[entry.MetricKey] + '</th>';
+                        tr += '<td class="' + (entry.Status == "ERROR" ? "table-danger" : "table-success") + ' centeraligned" >' + (entry.Status == "ERROR" ? "Failed" : "Passed") + '</td>';
+                        tr += '<td class="centeraligned">' + ((Metrics[entry.MetricKey] == 'Duplications' || Metrics[entry.MetricKey] == 'Coverage') ? parseFloat(entry.ErrorThreshold).toFixed(1) + '%' : Rating[entry.ErrorThreshold]) + '</td>';
+                        tr += '<td class="centeraligned">' + ((Metrics[entry.MetricKey] == 'Duplications' || Metrics[entry.MetricKey] == 'Coverage') ? parseFloat(entry.ActualValue).toFixed(1) + '%' : Rating[entry.ActualValue]) + '</td>';
+                        tr += entry.Status == "ERROR"
+                            ? Metrics[entry.MetricKey] == 'Reliability'
+                                ? '<td><b>' + ReliabilityRatingDetails[Rating[entry.ActualValue]] + '</b></td>'
+                                : Metrics[entry.MetricKey] == 'Security'
+                                    ? '<td><b>' + SecurityRatingDetails[Rating[entry.ActualValue]] + '</b></td>'
+                                    : Metrics[entry.MetricKey] == 'Maintainability'
+                                        ? '<td><b>' + MaintainabilityReatingDetails[Rating[entry.ActualValue]] + '</b></td>' 
+                                        : '<td><b>Actual Value is ' + Comparators[entry.Comparator] + ' Expected Value</b></td>'
+                            : '<td>&nbsp;</td>';
+                        tr += '<tr>';
+                    });
+                    tr += '</tbody></table></div>';
+                    table.append(tr);
+                }
+
+                //Blank Row
+                tr = $('<div class="row">');
+                tr.append('&nbsp;');
+                table.append(tr);
+
+                container.append(table);
+            },
+            error: function (res) { }
+        });
+    }
+</script>

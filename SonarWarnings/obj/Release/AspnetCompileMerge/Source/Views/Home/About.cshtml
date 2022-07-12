@@ -1,0 +1,193 @@
+﻿@model string
+@{
+    ViewBag.Title = "About";
+}
+<style type="text/css">
+    body {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+
+    .about-page-intro > h1 {
+        line-height: 40px;
+        font-size: 26px;
+        font-weight: 300;
+    }
+
+    .about-page-intro > .button {
+        height: 32px;
+        line-height: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 3px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .button:active {
+        box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    }
+
+    .button.button-active, .button:hover {
+        background: #236a97;
+        color: #fff;
+    }
+
+    .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        height: 24px;
+        line-height: 22px;
+        padding: 0 12px;
+        border: 1px solid #236a97;
+        border-radius: 2px;
+        box-sizing: border-box;
+        background: transparent;
+        color: #236a97;
+        font-weight: 600;
+        font-size: 12px;
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        transition: border-color .2s ease,box-shadow .2s ease;
+    }
+
+    .big-spacer-right {
+        margin-right: 16px !important;
+    }
+
+    .about-page-intro {
+        padding-right: 65px;
+        /*border-right: 1px solid #e6e6e6;*/
+    }
+
+    a.button {
+        text-decoration: none;
+    }
+
+    .about-page-entry {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+        padding: 65px 0;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    .about-page-issue-types {
+        text-align: left;
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .about-page-projects {
+        margin-left: 65px;
+        line-height: 1.4;
+        font-size: 16px;
+        text-align: center;
+        min-width: 128px;
+    }
+
+    .about-page-instance {
+        display: flex;
+        align-items: center;
+    }
+
+    .about-page {
+        font-size: 14px;
+    }
+
+        .about-page .boxed-group h3 {
+            font-weight: 400;
+            font-size: 16px;
+            padding-bottom: 12px;
+        }
+
+    .flex-columns {
+        margin-left: 30px;
+        padding-left: 30px;
+        display: flex;
+    }
+
+    svg {
+        margin-top: 2px;
+    }
+
+    .about-page .boxed-group-inner {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 25px;
+    }
+
+    .boxed-group-inner {
+        padding: 16px 20px;
+    }
+
+    .flex-column-third {
+        width: 33.33333%;
+    }
+
+    .pull-left {
+        float: left !important;
+    }
+
+    .little-spacer-right {
+        margin-right: 4px !important;
+    }
+
+    .about-page-text {
+        line-height: 1.4;
+    }
+
+    .overflow-hidden {
+        overflow: hidden !important;
+    }
+
+    .about-quality-model .flex-column + .flex-column {
+        margin-left: 30px;
+        padding-left: 30px;
+        border-left: 1px solid #e6e6e6;
+    }
+
+    .about-page .boxed-group {
+        border: none;
+    }
+
+    .boxed-group {
+        margin-bottom: 20px;
+        /*border: 1px solid #e6e6e6;
+        border-radius: 2px;*/
+        background-color: #fff;
+    }
+</style>
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.nav.navbar-nav').hide();
+        $(".container.body-content").height($(document).height());
+    });
+</script>
+<div class="about-page-entry">
+    <div class="about-page-intro">
+        <h1 class="big-spacer-bottom">Continuous Code Quality</h1>
+        <a class="button button-active big-spacer-right" href="/Login/Login">Log in</a>
+        <a class="button" href="@Model" target="_blank">Read documentation</a>
+    </div>
+
+</div>
+<div class="boxed-group about-quality-model">
+    <div class="boxed-group-inner clearfix">
+        <div class="flex-columns">
+            <div class="flex-column flex-column-third">
+                <h3>Reliability</h3>
+                <div class="pull-left little-spacer-right">
+                    <svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 1.41421;"><path d="M10.09,1.88A2.86,2.86,0,0,0,8,1a2.87,2.87,0,0,0-2.11.87A2.93,2.93,0,0,0,5,4h6A2.93,2.93,0,0,0,10.09,1.88Z" style="fill: currentcolor;"></path><path d="M14.54,9H13V5.6L14.3,4.42a.5.5,0,0,0,0-.71.49.49,0,0,0-.7,0L12.17,5H3.82L2.34,3.66a.5.5,0,0,0-.67.74L2.94,5.55V9H1.46a.5.5,0,0,0,0,1H3a5.2,5.2,0,0,0,1.05,2.32l-2,1.81a.5.5,0,1,0,.67.74l2-1.82A4.62,4.62,0,0,0,7,14.1V8A1,1,0,0,1,8,7a.94.94,0,0,1,1,.9v6.17A4.55,4.55,0,0,0,11.18,13l2,1.83a.51.51,0,0,0,.33.13.48.48,0,0,0,.37-.17.49.49,0,0,0,0-.7l-2-1.8a5.34,5.34,0,0,0,1-2.29h1.64a.5.5,0,0,0,0-1Z" style="fill: currentcolor;"></path></svg>
+                </div><p class="about-page-text overflow-hidden"><strong>Bugs</strong> track code that is demonstrably wrong or highly likely to yield unexpected behavior.</p>
+            </div><div class="flex-column flex-column-third"><h3>Security</h3><div class="pull-left little-spacer-right"><svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 1.41421;"><path d="M12,7.05H6V5a2,2,0,1,1,4,0,1,1,0,0,0,2,0A4,4,0,1,0,4,5V7.06A1.12,1.12,0,0,0,3,8.17V14a1.12,1.12,0,0,0,1.12,1.12H12A1.12,1.12,0,0,0,13.1,14V8.17A1.12,1.12,0,0,0,12,7.05ZM8,13a2,2,0,1,1,2-2A2,2,0,0,1,8,13Z" style="fill: currentcolor;"></path></svg></div><p class="about-page-text overflow-hidden"><strong>Vulnerabilities</strong> are raised on code that can be exploited by hackers.</p><br><div class="pull-left little-spacer-right"><svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 1.41421;"><path d="M14.08 3.23a1 1 0 00-.67-.77L8.16 1a1.06 1.06 0 00-.5 0L2.41 2.46a.94.94 0 00-.67.77c-.08.57-.74 5.63 1.14 8.31A9 9 0 007.68 15a.85.85 0 00.23 0 .78.78 0 00.22 0 8.93 8.93 0 004.81-3.46c1.85-2.68 1.21-7.74 1.14-8.31zM12.21 8a6.15 6.15 0 01-.86 2.42A7.92 7.92 0 018 13V8zM8 3v5H3.59a24.29 24.29 0 010-3.82z" style="fill: currentcolor;"></path></svg></div><p class="about-page-text overflow-hidden"><strong>Security Hotspots</strong> are raised on security-sensitive code that requires manual review to assess whether or not a vulnerability exists.</p></div><div class="flex-column flex-column-third"><h3>Maintainability</h3><div class="pull-left little-spacer-right"><svg height="16" version="1.1" viewBox="0 0 16 16" width="16" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 1.41421;"><path d="M8,15.1a7,7,0,1,0-7-7A7,7,0,0,0,8,15.1Zm.74-8.9,1.46-2.52a.29.29,0,0,1,.25-.14.3.3,0,0,1,.15,0,5.26,5.26,0,0,1,2.61,4.53.28.28,0,0,1-.29.29H10a.28.28,0,0,1-.29-.29,1.78,1.78,0,0,0-.88-1.51A.29.29,0,0,1,8.75,6.2Zm.11,3.44A.23.23,0,0,1,9,9.6a.29.29,0,0,1,.25.14l1.46,2.52a.18.18,0,0,1,0,.13.3.3,0,0,1-.15.27,5.3,5.3,0,0,1-5.23,0,.3.3,0,0,1-.1-.4L6.73,9.74A.29.29,0,0,1,7,9.6a.23.23,0,0,1,.14,0A1.79,1.79,0,0,0,8.86,9.64ZM5.33,3.59a.3.3,0,0,1,.41.1L7.2,6.21a.29.29,0,0,1-.1.4,1.79,1.79,0,0,0-.87,1.51.28.28,0,0,1-.29.29H3a.32.32,0,0,1-.32-.29A5.26,5.26,0,0,1,5.33,3.59Z" style="fill: currentcolor;"></path></svg></div><p class="about-page-text overflow-hidden"><strong>Code Smells</strong> will confuse maintainers or give them pause. They are measured primarily in terms of the time they will take to fix.</p></div>
+        </div>
+    </div>
+</div>

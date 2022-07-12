@@ -1,0 +1,286 @@
+﻿@{
+    ViewBag.Title = "Project Activities";
+}
+
+<div id="divProjects" class="row">
+</div>
+
+<div class="row">
+    &nbsp;
+</div>
+
+<link href="~/Content/Bootstrap_v4.1.css" rel="stylesheet" />
+<link href="~/Content/dataTables.bootstrap4.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<script src="~/Scripts/jquery.dataTables.min.js"></script>
+<script src="~/Scripts/dataTables.bootstrap4.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<link href="~/Content/bootstrap_4.4.1.min.css" rel="stylesheet" />
+
+<style type="text/css">
+    td.centertd {
+        text-align: center;
+    }
+
+    label.form-check-label {
+        padding-left: 14px;
+    }
+
+    input#chknew {
+        margin-top: 4px;
+        margin-left: -2px;
+    }
+
+    #SonarWarningsGrid {
+        width: 1100px;
+    }
+
+    div#loader {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    input, select, textarea {
+        max-width: initial;
+    }
+
+    .form-control {
+        font-size: inherit;
+        height: calc(3.5rem + 1px);
+    }
+
+    .navbar-collapse.collapse {
+        color: #333333;
+    }
+
+    ul.nav.navbar-nav {
+        display: block;
+    }
+
+    .navbar > .container, .navbar > .container-fluid {
+        display: block;
+    }
+
+    body {
+        padding-top: 0px;
+        font-size: 14px;
+    }
+
+    .navbar.navbar-inverse.navbar-fixed-top {
+        padding: 0px;
+        color: #333333;
+    }
+
+    td {
+        font-size: 10pt !important;
+    }
+
+    tr {
+        font-size: 10pt !important;
+    }
+
+    .dataTables_scrollHead {
+        padding-left: 17px;
+    }
+
+    .dataTables_scrollBody {
+        padding-left: 17px;
+    }
+
+    div#divAssignedProjects {
+        padding-left: 30px;
+    }
+
+    div#footer {
+        padding-left: 17px;
+    }
+
+    .icons-excel {
+        background: url(../Images/export-report.png) no-repeat;
+        border: none;
+        padding: 0px 0px 8px 30px;
+        height: 25px;
+        vertical-align: middle;
+    }
+
+    table.fixedHeader-floating {
+        position: fixed !important;
+        background-color: white
+    }
+
+        table.fixedHeader-floating.no-footer {
+            border-bottom-width: 0
+        }
+
+    table.fixedHeader-locked {
+        position: absolute !important;
+        background-color: white
+    }
+
+    .spinner, .spinner:after, .spinner:before {
+        display: inline-block;
+        box-sizing: border-box;
+        border-color: #4b9fd5 transparent transparent;
+        animation-duration: 1.2s;
+    }
+
+    .spinner, .spinner-placeholder {
+        position: relative;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+    }
+
+    .spinner {
+        border: 2px solid #4b9fd5;
+        border-radius: 50%;
+        animation: spin .75s linear infinite;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        background-image: none;
+        border: 1px solid transparent;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        border-radius: 4px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .btn-primary {
+        color: #fff;
+        background-color: #337ab7;
+        border-color: #2e6da4;
+    }
+
+    .table {
+        margin-bottom: 0.1rem;
+    }
+
+    .table-light, .table-light > td, .table-light > th {
+        background-color: #FDFEB0;
+    }
+
+    th.centeraligned, td.centeraligned {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /*.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+        border: 1px solid #000;
+    }
+
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+        border: 1px solid #000;
+    }*/
+    .aligncenter {
+        text-align: center;
+    }
+</style>
+
+<script type="text/javascript">
+
+    function SortByKeyAsc(array, key) {
+        return array.sort(function (a, b) {
+            var x = a[key]; var y = b[key];
+            return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
+    }
+
+    $(document).ready(function () {
+        $(".container.body-content").height($(document).height());
+        $('#loader').show();
+        $.ajax({
+            url: "/Activity/GetAllProjects",
+            type: "GET",
+            contentType: "application/json; charset=utf-8",
+            datatype: JSON,
+            success: function (result) {
+                console.log(result);
+                console.log(result.length);
+                total = result.length;
+
+                if (total > 0) {
+                    $(SortByKeyAsc(result, "name")).each(function () {
+                        $("#favorites").append($("<option></option>").val(this.Key).html(this.Name));
+                        $('.dropdown-menu').append('<li><a href="#">"' + this.name + '"</a></li>');
+                    });
+                    $("#favorites").prepend("<option value='-1'>Select Project (Total : " + total + ")</option>");
+                    $('#favorites option[value="-1"]').attr("selected", "selected");
+                }
+                else {
+                    alert('Please mark at least one project as a favorite.');
+                }
+                $('#loader').hide();
+            },
+            error: function (data) { }
+        });
+    });
+
+    function Get() {
+        if ($("#favorites option:selected").text().includes("Select Project")) {
+            alert('Please select one of the project assigned to you.');
+        }
+        else {
+            $('#loader').show();
+            $.ajax({
+                url: "/Activity/SyncToDatabase",
+                type: "GET",
+                contentType: "application/json; charset=utf-8",
+                data: { projectKey: $("#favorites option:selected").val(), projectName: $("#favorites option:selected").text() },
+                datatype: "json",
+                success: function (res) {
+                    $('#loader').hide();
+                    console.log(res);
+                    if (res) {
+                        alert('Data Sync Successfully');
+                    }
+                    else {
+                        alert('Error while Data Sync');
+                    }
+                },
+                error: function (res) {
+                    console.log(res);
+                }
+            });
+        }
+    }
+</script>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-light">
+        <tr>
+            <th class="centeraligned" style="width:80%">Projects</th>
+            <th class="centeraligned" style="width:20%">Actions</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Html.DropDownList("favorites", new SelectList(Enumerable.Empty<SelectListItem>()), new { @class = "form-control" })</td>
+            <td class="centertd">
+                <button id="getIssues" type="submit" onclick="Get()" class="btn btn-primary">Sync to Database</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="row">
+    <div class="col-md-5">
+    </div>
+    <div class="col-md-2">
+        <div id="loader" class="spinner-border text-primary"></div>
+    </div>
+    <div class="col-md-5">
+    </div>
+</div>

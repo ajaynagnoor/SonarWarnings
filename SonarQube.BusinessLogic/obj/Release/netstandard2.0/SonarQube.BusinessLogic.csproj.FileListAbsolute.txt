@@ -1,0 +1,17 @@
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\bin\Release\netstandard2.0\SonarQube.BusinessLogic.deps.json
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\bin\Release\netstandard2.0\SonarQube.BusinessLogic.dll
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\bin\Release\netstandard2.0\SonarQube.BusinessLogic.pdb
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\bin\Release\netstandard2.0\SonarQube.DataAccess.dll
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\bin\Release\netstandard2.0\System.Configuration.dll
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\bin\Release\netstandard2.0\System.Security.dll
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\bin\Release\netstandard2.0\SonarQube.DataAccess.pdb
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\bin\Release\netstandard2.0\System.Configuration.xml
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\bin\Release\netstandard2.0\System.Security.xml
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\obj\Release\netstandard2.0\SonarQube.BusinessLogic.AssemblyInfoInputs.cache
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\obj\Release\netstandard2.0\SonarQube.BusinessLogic.AssemblyInfo.cs
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\obj\Release\netstandard2.0\SonarQube.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\obj\Release\netstandard2.0\SonarQube.BusinessLogic.csproj.CopyComplete
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\obj\Release\netstandard2.0\SonarQube.BusinessLogic.dll
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\obj\Release\netstandard2.0\SonarQube.BusinessLogic.pdb
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\obj\Release\netstandard2.0\SonarQube.BusinessLogic.csproj.AssemblyReference.cache
+D:\Ajay\Sonar\SonarWarnings\SonarQube.BusinessLogic\obj\Release\netstandard2.0\SonarQube.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
